@@ -1,2 +1,2 @@
 #!/bin/bash
-find
+tail -1 < iacta >> iacta
