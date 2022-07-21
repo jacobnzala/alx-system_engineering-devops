@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+#doing a loop with condition
+
+num =0
+
+while [num -le 20]
+
+do
+
+	echo "num"
+
+num++
+
+case $num in
+
+	"num == 4"
+
+		echo "4\nbad luck from China" 
+
+case $num in
+
+	"num == 4"
+
+		echo "9\nbad luck from Japan" 
+
+case $num in
+
+	"num == 9"
+
+		echo "17\nbad luck from Italy" 
+
+done
+
+
+
+
+
+
