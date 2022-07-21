@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#using while loop and if statement to print n times a string
+
+n = 0
+
+
+
+while [n -le 10]
+
+if [n == 9]
+
+then
+
+	echo "Best School\nHi"
+
+else
+
+	echo "Best School"
+
+n++
+
+fi
