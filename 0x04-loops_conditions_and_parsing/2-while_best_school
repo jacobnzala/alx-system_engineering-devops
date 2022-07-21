@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#a script that repeats best school 10 times
+
+n=0; while [[ $n -lt 10 ]]; do Best School; n=$((n+1)); done
