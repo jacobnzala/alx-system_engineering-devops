@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#a script that write best school 10 times using until
+
+n = 0
+
+until [n -le 10]
+
+do
+
+	echo "Best School"
+
+	
+
+done
