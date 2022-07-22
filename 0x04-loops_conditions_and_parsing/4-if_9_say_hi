@@ -1,22 +1,14 @@
 #!/usr/bin/env bash
-#using while loop and if statement to print n times a string
+# displays Best School 10 times.
 
-n = 0
-
-
-
-while [n -le 10]
-
-if [n == 9]
-
-then
-
-	echo "Best School\nHi"
-
-else
-
-	echo "Best School"
-
-n++
-
-fi
+COUNTER=0
+while [ $COUNTER -lt 11 ]
+do
+    if [ $COUNTER = 9 ]
+    then
+        echo "Hi"
+    else
+        echo "Best School"
+    fi
+    let COUNTER+=1
+done
