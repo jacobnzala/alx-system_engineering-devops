@@ -1,28 +1,17 @@
 #!/usr/bin/env bash
-#scrip to print n times a string using if and elseif
+# displays Best School 10 times.
 
-n = 0
-
-
-
-while [n -le 10]
-
-if [n == 4]
-
-then
-
-	echo "bad luck"
-
-elseif [n == 8]
-
-	echo "good luck"
-
-
-
-else
-
-	echo "Best School"
-
-n++
-
-fi
+COUNTER=1
+while [ $COUNTER -lt 11 ]
+do
+    if [ $COUNTER = 4 ]
+    then
+        echo "bad luck"
+    elif [ $COUNTER = 8 ]
+    then
+        echo "good luck"
+    else
+        echo "Best School"
+    fi
+    let COUNTER+=1
+done
