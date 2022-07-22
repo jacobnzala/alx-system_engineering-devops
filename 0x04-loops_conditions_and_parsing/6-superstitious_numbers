@@ -1,38 +1,31 @@
 #!/usr/bin/env bash
-#doing a loop with condition
+# displays numbers from 1 to 20.
 
-num =0
-
-while [num -le 20]
-
+COUNTER=1
+while [ $COUNTER -lt 21 ]
 do
+    case $COUNTER in
 
-	echo "num"
+        4)
+	    echo $COUNTER
+	    echo "bad luck from China"
+	    ;;
+	
+	9)
+	    echo $COUNTER
+	    echo "bad luck from Japan"
+	    ;;
+	
+	17)
+	    echo $COUNTER
+	    echo "bad luck from Italy"
+	    ;;
 
-num++
+	*)
+	    echo $COUNTER
+	    ;;
+    esac
 
-case $num in
-
-	"num == 4"
-
-		echo "4\nbad luck from China" 
-
-case $num in
-
-	"num == 4"
-
-		echo "9\nbad luck from Japan" 
-
-case $num in
-
-	"num == 9"
-
-		echo "17\nbad luck from Italy" 
-
+    let COUNTER+=1
 done
-
-
-
-
-
 
